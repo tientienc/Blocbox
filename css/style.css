@@ -44,7 +44,7 @@ p {
   margin: 0 2% 20px;
 }
 
-@media (min-width) {
+@media (min-width: 768px) {
   .container {
     width: 750px;
   }
@@ -78,10 +78,13 @@ header {
 header nav {
   padding: 1em 0;
 }
+.site-logo {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
 header nav ul {
   display: inline;
-  text-align: right;
-  float: right;
   margin: 0;
 }
 header nav ul > li {
@@ -104,19 +107,18 @@ header nav ul > li > a {
 header nav ul > li.btn-outline: hover > a {
   color: #34495E;
 }
-
 header .hero {
   text-align: center;
   display: block;
   positive: relative;
 }
 header .hero h1 {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: normal;
   margin: 95px 0 0;
 }
 header .hero p {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 100;
   margin: 10px 0 40px;
@@ -124,6 +126,37 @@ header .hero p {
 header .hero img {
   display: block;
   margin: 3em auto 0;
+  width: auto;
+  height: 200px;
+}
+
+@media (min-width: 768px){
+  header nav ul {
+    display: inline;
+    text-align: right;
+    float: right;
+    margin: 0;
+  }
+  .site-logo {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+  header .hero h1 {
+    font-size: 48px;
+    font-weight: normal;
+    margin: 95px 0 0;
+  }
+  header .hero p {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 100;
+    margin: 10px 0 40px;
+  }
+  header .hero img {
+    width: auto;
+    height: 500px;
+  }
 }
 
 /*Buttons*/
