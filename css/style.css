@@ -197,11 +197,21 @@ header .hero img {
 
 /*Pricing*/
 .pricing {
-  background: #34495E url("../images/background.jpg") top center no-repeat;
-  background: url("../images/background.jpg") top center no-repeat, linear-gradient(206deg,#5F81A3 0%,#34495E 94%);
+  position: relative;
+  background: url("../images/background.jpg") top center no-repeat;
   background-size: cover;
   text-align: center;
   padding: 4em 0;
+}
+.pricing:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(206deg, #5F81A3 55%, #34495E 55%);
+  opacity: .6
 }
 .pricing h2, .pricing p {
   color:#FFFFFF;
