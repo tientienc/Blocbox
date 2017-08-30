@@ -67,10 +67,11 @@
   bottom: 100%;
   margin: 0;
 }
-#menu-inverse .dropit-submenu{
+#menu-inverse .dropit-submenu {
   display: block;
   position: absolute;
-  top: -142px;
+  top: auto;
+  bottom: 100%;
   right: -3px;
   background-color: white;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
